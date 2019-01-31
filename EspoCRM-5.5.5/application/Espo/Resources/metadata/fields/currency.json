@@ -1,0 +1,45 @@
+{
+   "params":[
+      {
+         "name":"required",
+         "type":"bool",
+         "default":false
+      },
+      {
+         "name":"min",
+         "type":"float"
+      },
+      {
+         "name":"max",
+         "type":"float"
+      },
+      {
+         "name":"audited",
+         "type":"bool"
+      },
+      {
+         "name":"readOnly",
+         "type":"bool"
+      }
+   ],
+   "actualFields":[
+      "currency",
+      ""
+   ],
+   "fields":{
+      "currency":{
+         "type":"varchar",
+         "layoutDetailDisabled": true,
+         "layoutListDisabled": true,
+         "layoutMassUpdateDisabled": true,
+         "maxLength": 6
+      },
+      "converted":{
+         "type":"currencyConverted",
+         "readOnly": true,
+         "importDisabled": true
+      }
+   },
+   "filter": true,
+   "personalData": true
+}
