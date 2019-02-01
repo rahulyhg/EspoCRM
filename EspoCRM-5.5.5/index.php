@@ -29,7 +29,7 @@
 
 include "bootstrap.php";
 
-$app = new \Espo\Core\Application();
+$app = new \Application\Espo\Core\Application();
 if (!$app->isInstalled()) {
     header("Location: install/");
     exit;
